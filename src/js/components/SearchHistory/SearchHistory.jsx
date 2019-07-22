@@ -5,6 +5,7 @@ export default class SearchHistory extends React.Component {
         super(props);
     }
     render() {
+        const { searchHistory } = this.props;
         return(
         
         <div className='card'>
@@ -12,10 +13,14 @@ export default class SearchHistory extends React.Component {
             <div className='card-body'>
                 <table className='table'>
                     <tbody>
-                        <tr className='d-flex'>
-                            <td className='mr-auto p-2'>Mark</td>
-                            <td className='p-2'>Otto</td>
-                        </tr>
+                    {
+                        searchHistory.map((search, i) => (
+                            <tr key={ i }>
+                                <td>{ search.name }</td>
+                                <td>{ search.date }</td>
+                            </tr>
+                        ))
+                    }
                     </tbody>
                 </table>
             </div>
