@@ -9,5 +9,5 @@ export function updateSearchBar(city) {
 
 export const getWeather = city => ({
     type: 'GET_WEATHER',
-    payload: axios.get(`/weather/${city}`)
+    payload: axios.get(`/jesus/${city}`)
 });
