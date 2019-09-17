@@ -1,0 +1,9 @@
+body {
+    height: 100%;
+    background: #007bff;
+    background: linear-gradient(to right, #254f9d, #73a2d7);
+}
+
+.card {
+    border: 0;
+}

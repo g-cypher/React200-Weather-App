@@ -9,7 +9,7 @@ export default class SearchHistory extends React.Component {
         return(
         
         <div className='card'>
-            <h5 className='card-header bg-primary text-light'>Search History</h5>
+            <h5 className='card-header bg-dark text-light'>Search History</h5>
             <div className='card-body'>
                 <table className='table'>
                     <tbody>

@@ -8,11 +8,11 @@ export default class CityInformation extends React.Component {
         const { name, temp, pressure, humidity, temp_min, temp_max, speed, lon, lat } = this.props;
         return (
             <div className='card'>
-                <h5 className='card-header bg-primary text-light'>City Information</h5>
+                <h5 className='card-header bg-dark text-light'>City Information</h5>
                     <br></br>
                     <div className='card-body text-center '>
                         <h3 className='card-title '>{ name }</h3>
-                        <h7 className='card-text'>Lat/Long { lon } / { lat }</h7>
+                        <p className='card-text mb-3'>Lat/Long { lon } / { lat }</p>
                         
                         <div className='row'>
                             <div className='col'>
